@@ -346,9 +346,22 @@
 }
 
 .mission-features {
+  gap: 0.75rem;
+  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+}
+
+.feature-item {
+  font-size: 0.9rem;
+  gap: 12px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 /* Feature Icons - Fixed Colors */
@@ -784,9 +797,9 @@
 
 .cta-icon-wrapper {
   position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1091,6 +1104,9 @@
   .mission-features {
     gap: 0.75rem;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .feature-item {
@@ -1098,6 +1114,10 @@
     gap: 12px;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 
   /* Services - MOBILE OPTIMIZED */
@@ -1218,9 +1238,9 @@
   }
 
   .cta-icon-wrapper {
-    width: 45px;
-    height: 45px;
-    border-radius: 12px;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
   }
 
   .cta-card-header-dynamic h4 {
@@ -1354,12 +1374,16 @@
   }
 
   .cta-icon-wrapper {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 
   .cta-card-header-dynamic h4 {
     font-size: 0.95rem;
+  }
+
+  .cta-card-header-dynamic p {
+    font-size: 0.85rem;
   }
 
   .cta-btn-primary-dynamic,
@@ -1427,5 +1451,19 @@
 
   .cta-section-dynamic {
     padding: 2.5rem 1.5rem;
+  }
+}
+
+/* FORÇA CENTRALIZAÇÃO TOTAL NO MOBILE */
+@media (max-width: 768px) {
+  .mission-features .feature-item {
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto;
+    max-width: fit-content;
+  }
+
+  .mission-features .feature-item span {
+    text-align: center;
   }
 }

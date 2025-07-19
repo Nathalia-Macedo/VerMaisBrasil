@@ -22,6 +22,9 @@ import apae from "../images/apae.png"
 import adventista from "../images/adventista.png"
 import jv from "../images/image-removebg-preview (37).png"
 import ama from "../images/ama.png"
+import fc from '../images/fc.png'
+import im from '../images/instituto.png'
+
 
 export default function AboutSection() {
   const sectionRef = useRef(null)
@@ -34,10 +37,8 @@ export default function AboutSection() {
     { name: "APAE", logo: apae },
     { name: "Rede Adventista", logo: adventista },
     { name: "Associação de Amigos dos Autistas", logo: ama },
-    { name: "Universidade", logo: "/placeholder.svg?height=60&width=120&text=Universidade" },
-    { name: "Empresa Tech", logo: "/placeholder.svg?height=60&width=120&text=Tech+Corp" },
-    { name: "ONG Visão", logo: "/placeholder.svg?height=60&width=120&text=ONG+Visão" },
-    { name: "Colégio Particular", logo: "/placeholder.svg?height=60&width=120&text=Colégio" },
+    { name: "Associação Flávia Cristina", logo: fc },
+    { name: "Instituto Mirim Campo Grande", logo: im },
   ]
 
   const setupAnimations = () => {
@@ -157,11 +158,11 @@ export default function AboutSection() {
       description: "Transformando vidas",
     },
     {
-      number: "5",
-      label: "Estados Atendidos",
+      number: "Brasil",
+      label: "Cobertura Nacional",
       icon: MapPin,
       color: "blue",
-      description: "Cobertura nacional",
+      description: "Todo o território",
     },
     {
       number: "1000+",
@@ -313,15 +314,15 @@ export default function AboutSection() {
             <div className="mission-features">
               <div className="feature-item">
                 <Star size={16} className="feature-icon blue" />
-                <span>São Paulo (sede principal)</span>
+                <span>Cobertura em todo território nacional</span>
               </div>
               <div className="feature-item">
                 <Star size={16} className="feature-icon blue" />
-                <span>Rio de Janeiro e Minas Gerais</span>
+                <span>Foco principal: São Paulo</span>
               </div>
               <div className="feature-item">
                 <Star size={16} className="feature-icon blue" />
-                <span>Paraná e Santa Catarina</span>
+                <span>Expansão para todos os estados</span>
               </div>
             </div>
           </div>
