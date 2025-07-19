@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection"
 import FAQSection from "./components/FAQSection"
 import Footer from "./components/Footer"
 import BenefitsSection from "./components/BenefitsSection"
+import ClientsSection from "./components/ClientsSection"
 import "./App.css"
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <HeroSection />
       <AboutSection/>
       <BenefitsSection/>
+      <ClientsSection/>
       <FAQSection/>
       <Footer/>
     </div>

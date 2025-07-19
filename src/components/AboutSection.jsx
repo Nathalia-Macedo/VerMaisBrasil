@@ -241,20 +241,6 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* Clients Carousel */}
-        <div className="clients-section">
-          <h3 className="clients-title">Nossos Parceiros</h3>
-          <div className="carousel-container">
-            <div className="carousel-track" ref={carouselRef}>
-              {[...clients, ...clients].map((client, index) => (
-                <div key={index} className="client-logo">
-                  <img src={client.logo || "/placeholder.svg"} alt={client.name} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Stats Section - Modern Cards */}
         <div className="stats-grid-new" ref={statsRef}>
           {stats.map((stat, index) => (
